@@ -14,6 +14,7 @@ from pathlib import Path
 from decouple import config
 
 
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -57,7 +58,7 @@ INTERNAL_IPS = [
     "127.0.0.1",
 ]
 
-NPM_BIN_PATH = "/usr/bin/npm"
+NPM_BIN_PATH = "C:/Users/Kazak/AppData/Roaming/npm/npm.cmd"
 
 
 MIDDLEWARE = [
@@ -119,11 +120,12 @@ DATABASE_URL = config("DATABASE_URL", cast=str)
 if DATABASE_URL is not None:
     import dj_database_url
     DATABASES = {
-        "default": dj_database_url.config(
+        'default': dj_database_url.config(
             default=DATABASE_URL,
             conn_max_age=30,
-            conn_health_checks=True,
-        )
+            conn_health_checks=True
+        ),
+        
     }
 
 
