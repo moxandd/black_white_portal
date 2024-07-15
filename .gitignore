@@ -440,3 +440,4 @@ modules.xml
 # pytype static type analyzer
 
 # Cython debug symbols
+.env
