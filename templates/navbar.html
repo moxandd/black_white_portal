@@ -1,0 +1,41 @@
+{% load static %}
+<header>
+  <div class="navbar-wrapper | pt-[2rem] pb-[0.5rem] border-b-2 border-black">
+    <div class="navbar-container | default-container">
+      <div class="navbar-inner | flex justify-between items-center">
+        <img src="{% static 'assets/images/logo.svg' %}" alt="logo" />
+        <nav
+          class="navbar-navigation | flex items-center justify-between flex-grow"
+        >
+          <ul class="navlinks-list | flex flex-grow justify-center gap-[3em]">
+            <li class="nav-link-item |">
+              <a href="" class="nav-link">Home</a>
+            </li>
+            <li class="nav-link-item |">
+              <a href="" class="nav-link">Contact</a>
+            </li>
+            <li class="nav-link-item |">
+              <a href="" class="nav-link">About</a>
+            </li>
+            <li class="nav-link-item |">
+              <a href="" class="nav-link">Sign Up</a>
+            </li>
+          </ul>
+          <div class="nav-features | flex gap-[1.5em]">
+            <input
+              class="nav-search-input | rounded-md bg-[#F5F5F5]"
+              type="search"
+              placeholder="What are you looking for?"
+            />
+            <a class="flex items-center" href=""
+              ><img src="{% static 'assets/icons/wishlist.svg' %}" alt="icon"
+            /></a>
+            <a class="flex items-center" href=""
+              ><img src="{% static 'assets/icons/cart.svg' %}" alt="icon"
+            /></a>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
